@@ -1,12 +1,13 @@
 {
   "name": "keytester",
   "version": "0.0.1",
-  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "(cd apps/benchmark && npx webpack-dev-server --open --mode development) & (cd apps/keyboard && npx webpack-dev-server --mode development)",
+    "dev:benchmark": "(cd apps/benchmark && npx webpack-dev-server --open --mode development)",
+    "dev:keyboard": "(cd apps/keyboard && npx webpack-dev-server --open --mode development)",
+    "install-all": "npm install && (cd apps/benchmark && npm install) && (cd apps/keyboard && npm install)",
+    "uninstall-all": "rm -rf node_modules && (cd apps/benchmark && rm -rf node_modules) && (cd apps/keyboard && rm -rf node_modules)"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3"
   }
