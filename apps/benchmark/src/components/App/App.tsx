@@ -1,18 +1,16 @@
 import React from "react";
 
-import './App.css'
+import "./App.css";
 import Keyboard from "../Keyboard";
+import Benchmark from "../Benchmark";
 
 const App = () => {
   return (
     <div className="container">
-      <div>Name: benchmark</div>
-      <div>Framework: react</div>
-      <div>Language: TypeScript</div>
-      <div>CSS: Empty CSS</div>
       <Keyboard />
+      <Benchmark />
     </div>
-  )
+  );
 };
 
-export default App
+export default App;

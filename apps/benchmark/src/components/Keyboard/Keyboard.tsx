@@ -1,15 +1,15 @@
-import { mount } from 'keyboard/Keyboard'
+import { mount } from "keyboard/Keyboard";
 
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from "react";
 
 const Keyboard = () => {
   const keyboardRef = useRef(null);
 
-  const mountKeyboardApp = () => mount(keyboardRef.current)
+  const mountKeyboardApp = () => mount(keyboardRef.current);
 
-  useEffect(mountKeyboardApp, [])
+  useEffect(mountKeyboardApp, []);
 
-  return <div id="keyboard" ref={keyboardRef} />
-}
+  return <div id="keyboard" ref={keyboardRef} />;
+};
 
-export default Keyboard
+export default Keyboard;

@@ -1,7 +1,10 @@
-.container {
+.benchmark {
+  border: 10px solid #61dbdb;
+  padding: 10px;
   font-size: 1rem;
 }
 
 .keyboard {
-  border: 1px solid red;
+  border: 10px solid #41b883;
+  padding: 10px;
 }
