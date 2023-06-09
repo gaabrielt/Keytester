@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import { InputHistory, UserInput } from ".";
+import { useInputListener } from "../../hooks";
 
 const INITIAL_VALUE = {
   list: [],
@@ -10,7 +11,7 @@ const InputHistoryContext = createContext<InputHistory>(INITIAL_VALUE);
 const InputHistoryProvider: React.FC = ({ children }) => {
   const [list, setList] = useState<UserInput[]>([]);
 
-  const userInput = undefined;
+  const userInput = useInputListener();
 
   const inputHistory = {
     list,

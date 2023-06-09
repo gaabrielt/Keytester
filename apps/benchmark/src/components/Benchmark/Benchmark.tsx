@@ -1,10 +1,13 @@
 import React from "react";
 import GlobalProvider from "../../contexts/GlobalContext";
+import InputHistory from "../InputHistory";
 
 const Benchmark: React.FC = () => {
   return (
     <GlobalProvider>
-      <div className="benchmark" />
+      <div className="benchmark">
+        <InputHistory />
+      </div>
     </GlobalProvider>
   );
 };
