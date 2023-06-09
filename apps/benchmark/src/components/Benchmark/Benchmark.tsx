@@ -1,8 +1,11 @@
 import React from "react";
+import GlobalProvider from "../../contexts/GlobalContext";
 
 const Benchmark: React.FC = () => {
   return (
-    <div className="benchmark" />
+    <GlobalProvider>
+      <div className="benchmark" />
+    </GlobalProvider>
   );
 };
 
