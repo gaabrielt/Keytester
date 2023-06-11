@@ -2,20 +2,18 @@ import Vue from "vue";
 
 import App from "./components/App.vue";
 
-const MODE = process.env.MODE
+const MODE = process.env.MODE;
 
 console.log(MODE);
 
 const mount = () => {
   const KeyboardApp = new Vue({
-    el: "#keyboard",
-    template: "<App/>",
-    components: { App },
+    render: (hs) => hs(App),
   });
 
-  KeyboardApp.$mount();
-}
+  KeyboardApp.$mount("#keyboard");
+};
 
-if (MODE === "VUE") mount()
+if (MODE === "VUE") mount();
 
-export { mount }
+export { mount };

@@ -1,6 +1,7 @@
-import { mount } from "keyboard/Keyboard";
-
 import React, { useRef, useEffect } from "react";
+import "./Keyboard.css";
+
+import { mount } from "keyboard/Keyboard";
 
 const Keyboard = () => {
   const keyboardRef = useRef(null);

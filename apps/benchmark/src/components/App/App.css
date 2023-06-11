@@ -1,10 +1,15 @@
-.benchmark {
-  border: 10px solid #61dbdb;
-  padding: 10px;
-  font-size: 1rem;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.keyboard {
-  border: 10px solid #41b883;
-  padding: 10px;
+html,
+body,
+#app,
+.container {
+  height: 100%;
+}
+
+.container {
+  background: #0d141e;
 }

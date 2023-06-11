@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
-const Dotenv = require('dotenv-webpack');
+const Dotenv = require("dotenv-webpack");
 
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
@@ -40,7 +40,7 @@ module.exports = (_, argv) => ({
       vue: "vue/dist/vue.js",
     },
   },
-  
+
   plugins: [
     new ModuleFederationPlugin({
       name: "keyboard",
@@ -51,18 +51,13 @@ module.exports = (_, argv) => ({
       },
       shared: {
         ...deps,
-        vue: {
-          singleton: true,
-          eager: true,
-          version: deps.vue,
-        },
       },
     }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
     }),
     new Dotenv({
-      path: './../../.env'
-    })
+      path: "./../../.env",
+    }),
   ],
 });

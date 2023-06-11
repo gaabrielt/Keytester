@@ -1,4 +1,6 @@
 import React from "react";
+import "./Benchmark.css";
+
 import GlobalProvider from "../../contexts/GlobalContext";
 import InputHistory from "../InputHistory";
 
