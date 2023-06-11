@@ -1,0 +1,46 @@
+@keyframes hide-tile {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.keyTile {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  background: #172231;
+  color: white;
+  font-family: "B612 Mono", monospace;
+  padding: 5px;
+  opacity: 1;
+  animation-name: hide-tile;
+  animation-duration: 0.3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.keyTile .location {
+  flex: 0.2;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.keyTile .key {
+  flex: 0.6;
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  font-weight: 700;
+}
+
+.keyTile .modifiers {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  font-size: 0.8rem;
+}

@@ -17,8 +17,8 @@ export default {
       keyscodes: [
         {text: "A", code: 65, location: 0},
         {text: "B", code: 66, location: 0},
-        {text: "L Shift", code: 16, location: 1},
-        {text: "R Shift", code: 16, location: 2}
+        {text: "Shift", code: 16, location: 1},
+        {text: "Shift", code: 16, location: 2}
       ]
     }
   },

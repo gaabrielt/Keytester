@@ -1,0 +1,9 @@
+.inputHistory {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 12px;
+  row-gap: 6px;
+  display: flex;
+  flex-direction: column-reverse;
+}
